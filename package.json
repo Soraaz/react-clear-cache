@@ -1,15 +1,18 @@
 {
-  "name": "react-clear-cache",
-  "version": "1.4.12",
+  "name": "@invyo/react-clear-cache",
+  "version": "1.4.13",
   "description": "A component to manage application updates.",
   "author": "noahjohn9259",
   "license": "MIT",
-  "repository": "noahjohn9259/react-clear-cache",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahjohn9259/react-clear-cache.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "bin": {
-    "generate-build-meta": "./bin/cli.js"
+    "generate-build-meta": "bin/cli.js"
   },
   "files": [
     "bin",
@@ -32,13 +35,13 @@
     "release:patch": "npm version patch && git push origin && git push origin --tags"
   },
   "dependencies": {
+    "@smartrent/use-persisted-state": "^0.3.1",
     "minimist": "^1.2.5",
-    "use-persisted-state": "^0.3.0",
     "uuid": "^3.3.2"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
-    "react": "^15.0.0 || ^16.0.0",
+    "react": "^15.0.0 || ^16.0.0 || ^17.0.0",
     "react-dom": "^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
@@ -51,15 +54,22 @@
     "babel-runtime": "^6.26.0",
     "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
-    "react-scripts": "^3.3.1",
-    "rollup": "^0.62.0",
+    "react-scripts": "^4.0.3",
+    "rollup": "^2.56.3",
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^9.1.3",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-postcss": "^1.6.2",
-    "rollup-plugin-typescript2": "^0.17.0",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-typescript2": "^0.30.0",
     "rollup-plugin-url": "^1.4.0",
     "typescript": "3.5.2"
+  },
+  "bugs": {
+    "url": "https://github.com/noahjohn9259/react-clear-cache/issues"
+  },
+  "homepage": "https://github.com/noahjohn9259/react-clear-cache#readme",
+  "directories": {
+    "example": "example"
   }
 }

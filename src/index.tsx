@@ -1,5 +1,6 @@
 import * as React from 'react';
-import createPersistedState from 'use-persisted-state';
+// @ts-ignore
+import createPersistedState from '@smartrent/use-persisted-state';
 
 const STORAGE_KEY = 'APP_VERSION';
 
